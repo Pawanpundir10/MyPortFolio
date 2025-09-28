@@ -7,7 +7,7 @@ import { menuItems } from './data/menuItems';
 import { activityItems, bottomActivityItems } from './data/activityItems';
 
 // Component Imports
-import Layout from './components/Layout';
+import Layout from './components/Layout.jsx';
 
 const findFileById = (id, files = fileStructure) => {
   for (const file of files) {
