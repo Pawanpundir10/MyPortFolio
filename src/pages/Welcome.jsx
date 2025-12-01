@@ -54,11 +54,8 @@ function Welcome({ profile, onOpenFile }) {
         
         <div className="relative z-10">
           <h1 style={{ animationDelay: '0.2s' }} className="animate-fade-in text-5xl sm:text-6xl font-bold text-white opacity-0">
-            Welcome to the Portfolio of
+            Welcome to My Portfolio 
           </h1>
-          <p style={{ animationDelay: '0.4s' }} className="animate-fade-in text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300 text-6xl sm:text-7xl font-extrabold mt-2 opacity-0">
-            {profile?.name || 'A Developer'}
-          </p>
           <p style={{ animationDelay: '0.6s' }} className="animate-fade-in text-gray-400 mt-6 max-w-2xl mx-auto opacity-0">
             This is my interactive portfolio, built to look and feel like a code editor. Click on the cards below or use the file explorer on the left to navigate.
           </p>
