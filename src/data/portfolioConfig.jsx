@@ -1,37 +1,36 @@
-// src/data/portfolioConfig.js
-// This is the central place to edit your portfolio's content.
-
 const portfolioConfig = {
   profile: {
-    name: "Pawan Singh",
-    title: "Web Developer ",
-    avatarUrl: "src/utils/profile.jpg", 
+    name: "Deeksha Singh",
+    title: "Full Stack Developer",
+    avatarUrl: "/Gemini_Generated_Image_m6gmbom6gmbom6gm.png",
   },
 
   projects: [
-    { 
-      id: 1, 
-      name: "Project Buddy", 
-      description: "A collaborative platform to find teammates and work on projects together seamlessly.", 
-      techStack: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
-      link: 'https://project-buddy-five.vercel.app/',
-      imageUrl: 'https://placehold.co/600x400/252526/E0E0E0?text=Project+Buddy'
+    {
+      id: 1,
+      name: "AI Resume Analyzer",
+      description:
+        "An intelligent resume analyzer that uses AI to evaluate and provide feedback on your resume, highlighting strengths and areas for improvement.",
+      techStack: ["React", "Node.js", "MongoDB", "OpenAI API"],
+      link: "https://ai-resume-analyzer-one-psi.vercel.app/",
+      imageUrl:
+        "https://placehold.co/600x400/252526/E0E0E0?text=AI+Resume+Analyzer",
     },
-    { 
-      id: 2, 
-      name: "Typing Test", 
-      description: "A web app to test and improve your typing speed and accuracy with real-time feedback and stats.", 
-      techStack: ['React', 'TailwindCSS'],
-      link: 'https://typing-test-delta-khaki.vercel.app/',
-      imageUrl: 'https://placehold.co/600x400/252526/E0E0E0?text=Typing+Test'
+    {
+      id: 2,
+      name: "My Portfolio",
+      description:
+        "A beautiful and interactive portfolio website showcasing my skills, projects, and experience as a full-stack developer.",
+      techStack: ["React", "Tailwind CSS", "Vite"],
+      link: "/",
+      imageUrl: "https://placehold.co/600x400/252526/E0E0E0?text=Portfolio",
     },
   ],
   contact: {
-    email: "pawanpundir191@gmail.com",
-    github: "Pawanpundir10",
-    linkedin: "in/pawan-singh-09948624b/",
+    email: "deekshaasingh.1602@gmail.com",
+    github: "deekshhaaa",
+    linkedin: "in/deeksha123/",
   },
 };
 
 export default portfolioConfig;
-

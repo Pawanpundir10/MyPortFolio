@@ -1,4 +1,4 @@
-// src/data/menuItems.js
+
 export const menuItems = [
   { label: 'File', items: ['New File', 'Save', 'Exit'] },
   { label: 'Edit', items: ['Undo', 'Redo', 'Copy', 'Paste'] },

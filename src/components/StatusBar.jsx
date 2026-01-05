@@ -1,4 +1,4 @@
-// src/components/StatusBar.js
+
 import React from 'react';
 import { GitBranch } from 'lucide-react';
 

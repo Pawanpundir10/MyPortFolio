@@ -1,7 +1,5 @@
 
-// src/data/activityItems.js
-// Defines the icons on the far-left Activity Bar.
-// `fileId` links an icon to a file in fileStructure.js
+
 import { Home, User, Briefcase, Mail, Github, Settings } from 'lucide-react';
 
 export const activityItems = [

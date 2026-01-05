@@ -4,11 +4,10 @@ import About from '../pages/About';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
 import Github from '../pages/Github';
-import Welcome from '../pages/Welcome'; // Import the new Welcome component
+import Welcome from '../pages/Welcome'; 
 
 function Editor({ activeTab, config, onOpenFile }) {
   const renderContent = () => {
-    // If no tab is active, show the Welcome component
     if (!activeTab) {
       return <Welcome profile={config.profile} onOpenFile={onOpenFile} />;
     }
@@ -25,7 +24,6 @@ function Editor({ activeTab, config, onOpenFile }) {
       case 'github':
         return <Github githubUser={config.contact.github} />;
       default:
-        // This is a fallback for any other case
         return <Welcome profile={config.profile} onOpenFile={onOpenFile} />;
     }
   };

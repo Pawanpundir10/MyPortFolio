@@ -1,6 +1,4 @@
-// src/data/fileStructure.js
-// This defines the files and folders shown in the sidebar.
-// The `id` is crucial as it maps to the page components.
+
 
 export const fileStructure = [
   {
