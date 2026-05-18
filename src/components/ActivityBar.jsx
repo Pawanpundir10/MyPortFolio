@@ -21,7 +21,7 @@ function ActivityBar({ topItems, bottomItems, onItemClick }) {
   return (
     <nav className="bg-[#252526] shrink-0 flex flex-col justify-between items-center py-4 px-1 w-14">
       <div className="flex flex-col items-center gap-4">{renderItems(topItems)}</div>
-      <div className="flex flex-col items-center gap-4">{renderItems(bottomItems, false)}</div>
+      <div className="flex flex-col items-center gap-4">{renderItems(bottomItems, true)}</div>
     </nav>
   );
 }

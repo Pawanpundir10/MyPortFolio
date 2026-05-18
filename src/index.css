@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+.light-mode {
+  filter: invert(1) hue-rotate(180deg);
+  background-color: #e1e1e1;
+}
+
+.light-mode img,
+.light-mode svg {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.light-mode .bg-white {
+  background-color: transparent !important;
+}

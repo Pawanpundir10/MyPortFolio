@@ -29,6 +29,15 @@ function App() {
   // The portfolio folder will now be collapsed by default
   const [expandedFolders, setExpandedFolders] = useState([]);
   const [openMenu, setOpenMenu] = useState(null);
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  useEffect(() => {
+    if (isLightMode) {
+      document.documentElement.classList.add('light-mode');
+    } else {
+      document.documentElement.classList.remove('light-mode');
+    }
+  }, [isLightMode]);
 
   const handleMenuClick = (label, e) => {
     e.stopPropagation();
@@ -52,6 +61,10 @@ function App() {
   };
   
   const handleActivityItemClick = (fileId) => {
+    if (fileId === 'settings') {
+      setIsLightMode(!isLightMode);
+      return;
+    }
     const fileToOpen = findFileById(fileId);
     if (fileToOpen) {
       openNewTab(fileToOpen);

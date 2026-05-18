@@ -62,7 +62,7 @@ function Home({ profile, onOpenFile }) {
           </p>
 
           <p className="max-w-xl mx-auto text-gray-400 mt-8 text-lg">
-            I craft elegant and efficient solutions for the web. Welcome to my digital workspace.
+            Final-year CS student building full-stack SaaS apps with React, Node.js, and AI-powered systems. Welcome to my digital workspace.
           </p>
 
           <div className="mt-12 flex justify-center gap-4">

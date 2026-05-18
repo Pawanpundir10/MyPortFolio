@@ -13,10 +13,10 @@ function Contact({ contact }) {
     setSubmitStatus(null);
 
     // --- IMPORTANT ---
-    // Your actual EmailJS credentials
-    const serviceID = 'service_n6k3r3n';
-    const templateID = 'template_974ojcf';
-    const publicKey = 'p0GBuZkvOGInAod_1';
+    // Replace these with Pawan's EmailJS credentials
+    const serviceID = 'YOUR_SERVICE_ID';
+    const templateID = 'YOUR_TEMPLATE_ID';
+    const publicKey = 'YOUR_PUBLIC_KEY';
 
     emailjs.sendForm(serviceID, templateID, form.current, publicKey)
       .then((result) => {
@@ -52,9 +52,15 @@ function Contact({ contact }) {
                 <Mail className="w-6 h-6 text-blue-400" />
                 <span>{contact.email}</span>
               </a>
+              {contact.phone && (
+                <a href={`tel:${contact.phone}`} className="flex items-center gap-4 text-gray-300 hover:text-blue-400 transition-colors">
+                  <span className="w-6 h-6 text-blue-400 flex items-center justify-center text-lg">📞</span>
+                  <span>{contact.phone}</span>
+                </a>
+              )}
               <a href={`https://linkedin.com/${contact.linkedin}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-gray-300 hover:text-blue-400 transition-colors">
                 <Linkedin className="w-6 h-6 text-blue-400" />
-                <span>{contact.linkedin}</span>
+                <span>LinkedIn Profile</span>
               </a>
               <a href={`https://github.com/${contact.github}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-gray-300 hover:text-blue-400 transition-colors">
                 <Github className="w-6 h-6 text-blue-400" />

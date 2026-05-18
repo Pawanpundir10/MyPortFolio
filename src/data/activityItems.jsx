@@ -11,5 +11,5 @@ export const activityItems = [
 ];
 
 export const bottomActivityItems = [
-    { id: 'settings', icon: Settings },
+    { id: 'settings', icon: Settings, fileId: 'settings' },
 ]

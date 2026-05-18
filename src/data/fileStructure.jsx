@@ -3,7 +3,7 @@
 export const fileStructure = [
   {
     id: 'portfolio',
-    name: 'PORTFOLIO',
+    name: 'PAWAN SINGH',
     type: 'folder',
     children: [
       { id: 'home', name: 'home.jsx', type: 'file' },
