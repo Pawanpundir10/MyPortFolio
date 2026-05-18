@@ -73,8 +73,7 @@ Docusaurus build output
 Gatsby build output
 .cache/
 
-Add any Gatsby specific files which shouldn't be tracked e.g. env files
-public
+
 
 vuepress build output
 .vuepress/dist
